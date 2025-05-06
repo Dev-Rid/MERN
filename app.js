@@ -3,7 +3,7 @@ const express = require("express")
 
 // express app
 const app = express()
-
+const workoutRoutes = require("./routes/workouts")
 
 // app middleware
 app.use(express.json()) // parse json data
@@ -14,9 +14,7 @@ app.use((req, res, next) => {
  
 
 // route handler
-app.get("/", (req, res) => {
-    res.json({mssg: "Welcome to the app"})
-})
+app.use("/api/workouts", workoutRoutes)
 
 
 // listen for requests
