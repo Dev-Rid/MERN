@@ -21,7 +21,7 @@ const getWorkout = async(req, res) => {
     const workout = await Workout.findById(id) // find the workout by id
     
     if(!workout){
-        return res.statys(404).json({error: "No such workout"}) // if no workout is found, send a 404 error
+        return res.status(404).json({error: "No such workout"}) // if no workout is found, send a 404 error
     }
 
     res.status(200).json(workout)
