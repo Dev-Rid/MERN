@@ -25,6 +25,8 @@ userSchema.static.signup = async (email, password) => {
     if(exists){
         throw Error("Email already in use")
     }
+
+      
 }
 
 
