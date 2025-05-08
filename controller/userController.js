@@ -2,7 +2,7 @@ const User = require("../model/userModel")
 
 
 // login user
-const loginUser = async() => {
+const loginUser = async () => {
     res.json({msg: "Login User"})
 }
 
