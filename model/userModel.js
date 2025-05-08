@@ -36,6 +36,5 @@ userSchema.statics.signup = async function (email, password) {
 }
 
 
-
 module.exports = mongoose.model("User", userSchema) // export the user model
 // to be used in userController.js
