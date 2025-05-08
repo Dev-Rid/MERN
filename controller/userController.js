@@ -9,6 +9,7 @@ const loginUser = async (req, res) => {
 // signup user
 const signupUser = async (req, res) =>{
     const { email, password } = req.body // destructure the request body
+    
     try {
         const user = await User.signup(email, password) // call the signup method from the user model
         res.status(200).json({email, user}) // send the user as a response
