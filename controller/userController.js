@@ -2,12 +2,12 @@ const User = require("../model/userModel")
 
 
 // login user
-const loginUser = async () => {
+const loginUser = async (req, res) => {
     res.json({msg: "Login User"})
 }
 
 // signup user
-const signupUser = async () =>{
+const signupUser = async (req, res) =>{
     res.json({msg: "SignUp User"})
 }
 
