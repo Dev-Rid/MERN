@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+const bcrypt = rewuire("bcrypt")
 
 const Schema = mongoose.Schema
 
