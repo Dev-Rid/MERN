@@ -22,7 +22,7 @@ const userSchema = new Schema({
 userSchema.statics.signup = async function(email, password) {
 
     console.log("email", email)
-    console.log("password", password)   
+    console.log ("password", password)   
 
     // validation
     // if(!email || !password){
