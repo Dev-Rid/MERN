@@ -31,7 +31,7 @@ userSchema.statics.signup = async function (email, password) {
     }
 
     if(!validator.isStrongPassword(password)){
-        throw Error("Password is not strong enough")
+        throw Error("Passwwhatsappord is not strong enough")
     }
 
     
