@@ -21,8 +21,8 @@ const userSchema = new Schema({
 // static signup method
 userSchema.statics.signup = async function(email, password) {
 
-    clg("email", email)
-    clg("password", password)   
+    console.log("email", email)
+    console.log("password", password)   
 
     // validation
     // if(!email || !password){
