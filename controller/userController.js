@@ -1,5 +1,9 @@
 const User = require("../model/userModel") // import the user model
+const jwt = require("jsonwebtoken") // import jsonwebtoken
 
+const createToken = (_id) => {
+    jwt.sign
+}
 
 // login user
 const loginUser = async (req, res) => {
